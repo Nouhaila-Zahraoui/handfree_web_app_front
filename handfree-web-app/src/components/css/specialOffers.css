@@ -1,0 +1,64 @@
+/* Special Offers Container */
+.special-offers-container {
+    background-image: url('rec.png');
+    padding: 40px 20px; /* Padding for spacing */
+    position: relative; /* To position the image */
+    max-height: 300px;
+    margin-top: 60px;
+}
+
+/* Content */
+.content {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between text and image */
+}
+
+/* Text Container */
+.text-container {
+    background: rgba(255, 255, 255, 0.56); /* Light shadow with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adjust shadow for better visibility */
+    padding: 20px; /* Padding inside the text box */
+    margin-left: 40px;
+    margin-bottom: 20px;
+    max-width: 400px; /* Max width for the text box */
+}
+
+
+/* Offers Title */
+.offers-title {
+    font-size: 24px; /* Title font size */
+    margin-bottom: 10px; /* Space below title */
+}
+
+/* Offers Text */
+.offers-text {
+    font-size: 16px; /* Text font size */
+    margin-bottom: 20px; /* Space below text */
+}
+
+/* Login Button */
+.login-button {
+    background-color: orange; /* Orange button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+/* Button Hover Effect */
+.login-button:hover {
+    background-color: darkorange; /* Darker orange on hover */
+}
+
+/* Woman Image */
+.woman-image {
+    position: relative; /* Relative position */
+    width: 400px; /* Set a width for the image */
+    height: 550px; /* Maintain aspect ratio */
+    margin-top: -190px; /* Adjust position to extend head outside */
+    z-index: 1; /* Ensure the image is above the background */
+}

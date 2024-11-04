@@ -1,0 +1,73 @@
+.happy-customers {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    margin-left: 300px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    color: orange;
+    font-size: 1.2rem;
+    background: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-icon.active,
+.nav-icon:hover {
+    background-color: orange;
+    color: white;
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.quote-mark {
+    color: orange;
+    font-size: 2rem;
+    vertical-align: top;
+}

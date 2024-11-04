@@ -1,0 +1,67 @@
+.card-container {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: space-between; /* Space between cards */
+    margin-left:100px;
+    margin-right:100px ;
+    margin-bottom: 100px;
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+}
+.section-title{
+    font-family: 'Open Sans', sans-serif; /* Open Sans font */
+    font-size: 24px;
+    margin-right: 800px;
+}
+
+
+.popular-packages{
+    margin-top: 150px;
+}
+
+.package-card {
+    flex: 1 1 23%; /* Flex properties for responsive design, adjust the width */
+    margin: 10px; /* Add margin around each card */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+.package-card:hover {
+    transform: scale(1.05); /* Slightly scale the card on hover */
+}
+
+.package-image {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.characteristics {
+    display: flex;
+    flex-direction: column; /* Stack characteristics vertically */
+    align-items: center; /* Center align items */
+}
+
+.characteristic-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0; /* Spacing between items */
+}
+
+.buy-now {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.buy-now:hover {
+    background-color: orange;
+    color: white; /* Change text color on hover */
+}

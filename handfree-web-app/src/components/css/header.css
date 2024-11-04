@@ -1,0 +1,106 @@
+/* Header styles */
+.header {
+    position: relative;
+    height: 70vh;
+    background-image: url('morocco.jpg'); /* Background image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Overlay for the entire header */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menu styling with light shadow background */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background: rgba(255, 255, 255, 0.41); /* Light shadow layer */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+
+.logo {
+    height: 60px; /* Adjust logo size */
+    margin-right: 20px;
+}
+
+/* Centered menu items */
+.menu-center {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+
+.menu-item.active {
+    color: orange;
+}
+
+.menu-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: orange;
+}
+
+/* Login and Sign Up styles */
+.menu-right {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.sign-up {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+/* Header text styling */
+.header-text {
+    font-size: 3.5rem;
+    font-family: 'Pacifico', cursive; /* Beautiful handwriting-style font */
+    text-align: center;
+    margin-top: 150px; /* Adjust for positioning */
+}
+.p{
+    font-size: 2.5rem;
+    font-family: 'open', sans-serif; /* Beautiful handwriting-style font */
+    text-align: center;
+    color: orange;
+}
