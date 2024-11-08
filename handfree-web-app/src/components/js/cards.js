@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../css/cards.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-
 const Cards = () => {
     const [cities, setCities] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0); // Track the current start index for visible cards
@@ -13,7 +12,6 @@ const Cards = () => {
             .then(data => setCities(data))
             .catch(error => console.error("Error fetching cities:", error));
     }, []);
-
     const visibleCards = 4; // Number of cards visible at one time
 
     // Handle left arrow click
@@ -25,7 +23,6 @@ const Cards = () => {
     const handleNext = () => {
         setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, cities.length - visibleCards));
     };
-
     return (
         <div className="services-container">
             <div className="title-arrow-container">
@@ -55,5 +52,4 @@ const Cards = () => {
         </div>
     );
 };
-
 export default Cards;

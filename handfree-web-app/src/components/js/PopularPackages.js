@@ -1,8 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faLock, faUserFriends, faClipboardCheck, faMoneyBillWave, faGift } from '@fortawesome/free-solid-svg-icons'; // Import your desired icons
+import { faCheckCircle, faLock, faUserFriends, faClipboardCheck, faGift } from '@fortawesome/free-solid-svg-icons'; // Import your desired icons
 import '../css/popularPackages.css'; // Import your CSS file
-
 const PopularPackages = () => {
     const packages = [
         {
@@ -40,7 +39,7 @@ const PopularPackages = () => {
         {
             type: 'Heavy',
             price: '100$',
-            image: `${process.env.PUBLIC_URL}/heavy.jpg`, // Path to your image
+            image: `${process.env.PUBLIC_URL}/heavy.jpg`,
             characteristics: [
                 { text: 'Discount', icon: faGift },
                 { text: 'Wherever you want', icon: faUserFriends },
@@ -48,20 +47,19 @@ const PopularPackages = () => {
             ],
         },
     ];
-
     return (
         <section className="popular-packages">
             <h2 className="section-title">The Most Popular Packages</h2>
             <div className="card-container">
                 {packages.map((pkg, index) => (
                     <div key={index} className="package-card">
-                        <img src={pkg.image} alt={pkg.type} className="package-image" /> {/* Big image for each card */}
+                        <img src={pkg.image} alt={pkg.type} className="package-image" />
                         <h3 className="package-type">{pkg.type}</h3>
                         <p className="package-price" style={{ color: 'orange', fontWeight: 'bold' }}>{pkg.price}</p>
                         <div className="characteristics">
                             {pkg.characteristics.map((char, charIndex) => (
                                 <span key={charIndex} className="characteristic-item">
-                                    <FontAwesomeIcon icon={char.icon} className="characteristic-icon" style={{ color: 'orange', margin: 10 }} /> {/* Orange icons */}
+                                    <FontAwesomeIcon icon={char.icon} className="characteristic-icon" style={{ color: 'orange', margin: 10 }} />
                                     {char.text}
                                 </span>
                             ))}

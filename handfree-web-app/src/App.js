@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/js/header';
 import Cards from './components/js/cards';
@@ -7,8 +6,6 @@ import PopularPackages from './components/js/PopularPackages';
 import ContactUs from './components/js/ContactUs';
 import HappyCustomers from './components/js/HappyCustomers';
 import Footer from './components/js/Footer';
-
-
 function App() {
   return (
     <div className="App">
@@ -22,5 +19,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../css/contactUs.css';
-import backgroundImage from '../css/rec.png'; // Update path as necessary
-
+import backgroundImage from '../css/rec.png';
 const ContactUs = () => {
     return (
         <section className="contact-section" style={{ backgroundImage: `url(${backgroundImage})` }}>

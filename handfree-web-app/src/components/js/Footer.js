@@ -1,8 +1,7 @@
 import React from 'react';
 import { FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import '../css/footer.css';
-import logo from '../css/hand.png'; // Update the path to your logo image
-
+import logo from '../css/hand.png';
 const Footer = () => {
     return (
         <footer className="footer">
